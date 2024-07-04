@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { assets } from "@/assets/assets";
+import Link from 'next/link';
 
 const Gistitem = ({ id, title, description, image, date, category, author, author_img }) => {
   return (
@@ -11,15 +12,17 @@ const Gistitem = ({ id, title, description, image, date, category, author, autho
         <h2 className='text-xl font-bold mt-2'>{title}</h2>
         <p className='text-sm mt-2'>{description}</p>
         <div className='flex items-center mt-4'>
+          <Link href={`/blogs/${id}`}>
           <Image src={author_img} alt={author} width={40} height={40} className='rounded-full' />
+          </Link>
           <div className='ml-2'>
             <p className='text-sm font-bold'>{author}</p>
             <p className='text-xs text-gray-500'>{new Date(date).toLocaleDateString()}</p>
           </div>
         </div>
-        <div className='inline-flex items-center py-2 font-semibold text-center'>
+        <Link href={`/blogs/${id}`} className='inline-flex items-center py-2 font-semibold text-center'>
           Read more <Image className="cursor-pointer ml-2" src={assets.arrow} alt='' width={20} height={20} />
-        </div>
+        </Link>
       </div>
     </div>
   );
