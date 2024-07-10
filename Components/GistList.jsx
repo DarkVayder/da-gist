@@ -7,7 +7,7 @@ const GistList = () => {
 
     return (
         <div>
-            <div className='flex justify-center gap-6 my-10'>
+            <div className='flex justify-center gap-6 my-10 sm:gap-6 my-4'>
                 <button onClick={() => setMenu('All')} className={menu === "All" ? 'bg-black text-white py-1 px-4 rounded-sm' : ""}>All</button> 
                 <button onClick={() => setMenu('Technology')} className={menu === "Technology" ? 'bg-black text-white py-1 px-4 rounded-sm' : ""}>Tech</button>
                 <button onClick={() => setMenu('Startup')} className={menu === "Startup" ? 'bg-black text-white py-1 px-4 rounded-sm' : ""}>Startup</button>
@@ -16,7 +16,7 @@ const GistList = () => {
                 <button onClick={() => setMenu('Sports')} className={menu === "Sports" ? 'bg-black text-white py-1 px-4 rounded-sm' : ""}>Sports</button>
                 <button onClick={() => setMenu('Lifestyle')} className={menu === "Lifestyle" ? 'bg-black text-white py-1 px-4 rounded-sm' : ""}>Lifestyle</button>
             </div>
-            <div className='flex flex-wrap justify-center gap-6'>
+            <div className='flex flex-wrap justify-center gap-6 sm:grid-cols-2 md:grid-cols-4 gap-4'>
                 {blog_data.filter((item) => menu === 'All' ? true : item.category === menu).map((item) => (
                     <Gistitem
                         key={item.id}
