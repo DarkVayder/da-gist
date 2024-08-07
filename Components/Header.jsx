@@ -14,12 +14,11 @@ const Header = () => {
             </div>
             <div className="text-center my-8">
                 <h1 className="text-3xl sm:text-5xl font-medium">Your Trending Gist</h1>
-                <p className="mt-10 max-w-[720px] m-auto text-xs sm:text-base">Hey there, Gist Lover! 🌟 Welcome to Da Gist Blog, where the juiciest stories and hottest trends collide! Whether you're here for the latest celebrity buzz, fashion tips, or tech updates, we've got the inside scoop just for you. Buckle up, because things are about to get spicy! Let's dive into the world of Gist together. 🎉</p>
+                <p className="mt-10 max-w-[720px] m-auto text-xs sm:text-base">Hey there, Gist Lover! 🌟 Welcome to Da Gist Blog, where the juiciest stories and hottest trends collide! Whether you are here for the latest celebrity buzz, fashion tips, or tech updates, we have got the inside scoop just for you. Buckle up, because things are about to get spicy! Lets dive into the world of Gist together. 🎉</p>
                 <form className="flex justify-between max-w-[500px] scale-72 sm:scale-100 mx-auto mt-10 border border-black shadow-[-8px_8px_0px_#000000]" 
                 action="">
                     <input type="email" placeholder="Enter Email" className="pl-4 outline-none"/>
                     <button type='submit' className="border-l border-black py-4 px-4 sm:px-8 active:bg-gray-600 active::text-white">Subscribe</button>
-
                 </form>
             </div>
         </div>
