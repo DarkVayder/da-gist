@@ -23,7 +23,7 @@ const GistList = () => {
                         id={item.id}
                         title={item.title}
                         description={item.description}
-                        image={item.image}
+                        // image={item.image}
                         date={item.date}
                         category={item.category}
                         author={item.author}
