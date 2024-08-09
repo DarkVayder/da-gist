@@ -15,14 +15,21 @@ const Header = () => {
                     Hey there, Gist Lover! 🌟 Welcome to Da Gist Blog, where the juiciest stories and hottest trends collide! Whether you are here for the latest celebrity buzz, fashion tips, or tech updates, we have got the inside scoop just for you. Buckle up, because things are about to get spicy! Lets dive into the world of Gist together. 🎉
                 </p>
                 <form
-                    className="flex justify-between max-w-[500px] mx-auto mt-10 border border-black shadow-[-8px_8px_0px_#000000]"
-                    action=""
-                >
-                    <input type="email" placeholder="Enter Email" className="pl-4 outline-none" />
-                    <button type="submit" className="border-l border-black py-4 px-4 sm:px-8 active:bg-gray-600 active:text-white">
-                        Subscribe
-                    </button>
-                </form>
+    className="flex items-center max-w-[500px] w-full border border-black shadow-[-8px_8px_0px_#000000]"
+    action=""
+  >
+    <input
+      type="email"
+      placeholder="Enter Email"
+      className="flex-grow pl-4 py-2 outline-none"
+    />
+    <button
+      type="submit"
+      className="border-l border-black py-2 px-4 sm:px-8 active:bg-gray-600 active:text-white"
+    >
+      Subscribe
+    </button>
+  </form>
             </div>
         </div>
     );
