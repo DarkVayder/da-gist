@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaGooglePlusG } from 'react-icons/fa';
+import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => (
   <footer className=" text-black text-center p-4 mt-8">
@@ -14,10 +15,10 @@ const Footer = () => (
           <FaFacebook className="text-gray-800" size={32} />
         </a>
         <a href="https://twitter.com" aria-label="Twitter" className="bg-white rounded-full p-2">
-          <FaTwitter className="text-gray-800" size={32} />
+          <FaXTwitter className="text-gray-800" size={32} />
         </a>
         <a href="https://plus.google.com" aria-label="Google Plus" className="bg-white rounded-full p-2">
-          <FaGooglePlusG className="text-gray-800" size={32} />
+          <FaWhatsapp className="text-gray-800" size={32} />
         </a>
       </div>
     </div>
